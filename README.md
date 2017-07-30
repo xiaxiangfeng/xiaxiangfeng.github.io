@@ -15,7 +15,7 @@
 # 个人信息
 
  - 夏祥峰/男/1991 
- - 大专/山东商务技术学院计算机系 
+ - 大专/山东商务职业技术学院计算机系 
  - 工作年限：4年
  - 技术博客：http://www.cnblogs.com/c-o-d-e/ 
  - Github：https://github.com/xiaxiangfeng 
