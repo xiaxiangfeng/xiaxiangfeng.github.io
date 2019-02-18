@@ -1,6 +1,7 @@
 本人熟悉的前端框架有React和Vue，并在公司项目中使用了React全家桶开发多个项目；曾经开发过会员管理系统、导航网站使用了Vue以及相关的开发套件。在学习和使用这两个框架时，做过一些比较，通过比较来进一步了解和学习这两个框架;
 本人在GitHub上开发维护过开源项目；
 在大学期间主要学习的是C#编程语言、.net框架、在实习和工作之初从事ASP.NET开发工作，有过后端开发经验和数据库使用经验，从事后端开发期间除了编写C#代码之外同时也编写JavaScript的前端业务逻辑代码和前端模板的编写。
+
 ---
 
 
@@ -88,7 +89,10 @@ P2P网站负责的模块有，登录注册、个人中心、众筹模块、和�
 ## 身份证验证和信息获取的js包
 
  - [id-card-validator](https://github.com/xiaxiangfeng/id-card-validator)：身份证严格验证和获取基本信息：15位和18位内地身份证包括地区、生日、校验码；获取性别，年龄，出生日期，城市名称
-
+ - [react-flip-clock](https://github.com/xiaxiangfeng/react-flip-clock)：react 翻页时钟计时器插件
+ - [k-line](https://github.com/xiaxiangfeng/k-line)：股票、虚拟币交易k线图
+ - [count-down](https://github.com/xiaxiangfeng/count-down)：一个js写的倒计时插件
+ - [e2number-string](https://github.com/xiaxiangfeng/e2number-string): 科学计数法转数字字符串
 ## 技术文章
 
 - [JavaScript中的继承](http://www.cnblogs.com/c-o-d-e/p/5589536.html)
