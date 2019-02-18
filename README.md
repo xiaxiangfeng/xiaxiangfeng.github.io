@@ -86,13 +86,14 @@ P2P网站负责的模块有，登录注册、个人中心、众筹模块、和�
 
 # 开源项目和作品
 
-## 身份证验证和信息获取的js包
+## GitHub项目
 
  - [id-card-validator](https://github.com/xiaxiangfeng/id-card-validator)：身份证严格验证和获取基本信息：15位和18位内地身份证包括地区、生日、校验码；获取性别，年龄，出生日期，城市名称
  - [react-flip-clock](https://github.com/xiaxiangfeng/react-flip-clock)：react 翻页时钟计时器插件
  - [k-line](https://github.com/xiaxiangfeng/k-line)：股票、虚拟币交易k线图
  - [count-down](https://github.com/xiaxiangfeng/count-down)：一个js写的倒计时插件
  - [e2number-string](https://github.com/xiaxiangfeng/e2number-string): 科学计数法转数字字符串
+
 ## 技术文章
 
 - [JavaScript中的继承](http://www.cnblogs.com/c-o-d-e/p/5589536.html)
