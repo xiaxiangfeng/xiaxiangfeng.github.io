@@ -18,7 +18,7 @@
 
  - 夏祥峰/男/1991 
  - 大专/山东商务职业技术学院计算机系 
- - 工作年限：5年
+ - 工作年限：6年
  - 技术博客：http://www.cnblogs.com/c-o-d-e/ 
  - Github：https://github.com/xiaxiangfeng 
  - 期望职位：Web前端
