@@ -1,22 +1,96 @@
-﻿body{margin:0;padding:0;background:#ffe;font-size:12px;overflow:auto}
-#mainDiv{width:100%;height:100%}
-#loveHeart{width:670px;height:625px;margin-right: auto;margin-left:auto;margin-top: -80px;}
-#garden{width:100%;height:100%}
-#elapseClock{text-align:right;font-size:18px;margin-top:10px;margin-bottom:10px}
-#words{font-family:"sans-serif";width:500px;font-size:24px;color:#666}
-#messages{display:none}
-#elapseClock .digit{font-family:"digit";font-size:36px}
-#loveu{padding:5px;font-size:22px;margin-top:80px;margin-right:120px;text-align:right;display:none}
-#loveu .signature{margin-top:10px;font-size:20px;font-style:italic}
-#clickSound{display:none}
-#code{color:#333;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:18px}
-#code .string{color:#2a36ff}
-#code .keyword{color:#7f0055;font-weight:bold}
-#code .placeholder{margin-left:15px}#code .space{margin-left:7px}
-#code .comments{color:#3f7f5f;margin-top: 10px;}
-#copyright{margin-top:10px;text-align:center;width:100%;color:#666}
-#errorMsg{width:100%;text-align:center;font-size:24px;position:absolute;top:100px;left:0}
-#copyright a{color:#666}
-.test{
-    font-size: 12px;
+﻿html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffe;
+  font-size: 12px;
+  overflow: auto;
+}
+#garden {
+  max-width: 670px;
+  max-height: 625px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+.elapseClock {
+  text-align: right;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.words {
+  font-family: "sans-serif";
+  font-size: 20px;
+  color: #666;
+  max-width: 250px;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.messages {
+  padding-top: 20px;
+  display: none;
+}
+.elapseClock .digit {
+  font-family: "digit";
+  font-size: 16px;
+}
+.loveu {
+  font-size: 16px;
+  text-align: right;
+  display: none;
+  padding-right: 30px;
+}
+.loveu .signature {
+  margin-top: 10px;
+  font-size: 20px;
+  font-style: italic;
+}
+.code {
+  color: #333;
+  font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New",
+    "sans-serif";
+  font-size: 18px;
+  max-width: 670px;
+  margin: auto;
+}
+.code .string {
+  color: #2a36ff;
+}
+.code .keyword {
+  color: #7f0055;
+  font-weight: bold;
+}
+.code .placeholder {
+  margin-left: 15px;
+}
+.code .space {
+  margin-left: 7px;
+}
+.code .comments {
+  color: #3f7f5f;
+  margin-top: 10px;
+}
+#errorMsg {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  top: 100px;
+  left: 0;
 }
