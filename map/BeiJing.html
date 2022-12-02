@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Add 3D terrain to a map</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <script>
+      // TO MAKE THE MAP APPEAR YOU MUST
+      // ADD YOUR ACCESS TOKEN FROM
+      // https://account.mapbox.com
+      mapboxgl.accessToken =
+        "pk.eyJ1Ijoid2VpemhpbWluMjAwNyIsImEiOiJjajkzeHRhcWkyaWtsMzNucmZkZHBsbWtsIn0.Roa71zaPUY1M00OQ0X1WzA";
+      const map = new mapboxgl.Map({
+        container: "map",
+        zoom: 8.5,
+        center: [116.5, 40],
+        pitch: 60,
+        bearing: 0,
+        style: {
+          version: 8,
+          name: "Mapbox Streets",
+          sprite: "mapbox://sprites/mapbox/streets-v8",
+          glyphs: "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+          sources: {
+            dem: {
+              type: "raster-dem",
+              tiles: ["./beijing-png/{z}/{x}/{y}.png"],
+            },
+            "mapbox-terrain-dem-v1": {
+              tileSize: 512,
+              type: "raster-dem",
+              url: "./mapbox.mapbox-terrain-dem-v1.json.json",
+            },
+          },
+          terrain: {
+            source: "mapbox-terrain-dem-v1",
+            exaggeration: 1.5,
+          },
+          layers: [
+            {
+              id: "dem",
+              type: "hillshade",
+              source: "dem",
+              layout: {
+                visibility: "visible",
+              },
+              paint: {
+                "hillshade-shadow-color": "rgba(33,90,36,1)",
+                "hillshade-highlight-color": "rgba(139,195,74,1)",
+                "hillshade-exaggeration": 1,
+                "hillshade-accent-color": "rgba(208,219,101,1)",
+                "hillshade-illumination-anchor": "viewport",
+              },
+            },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>
