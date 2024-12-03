@@ -1,9 +1,9 @@
 
-本人熟练使用three.js 、MapBoxGl、DeckGL等webgl库，在公司主导封装了web 3D 渲染引擎、数字孪生城市低代码开发平台；并参与了多了个区县级的数字孪生项目、城市级别的自动驾驶监控平台
-熟悉的前端框架有React和Vue，并在公司项目中使用了React全家桶开发多个项目；曾经开发过会员管理系统、导航网站(使用了Vue以及相关的开发套件)。在学习和使用这两个框架时，做过一些比较，通过比较来进一步了解和学习这两个框架;
+本人熟练使用three.js 、MapBoxGl、DeckGL等webgl库，在公司主导封装了web 3D 渲染引擎、数字孪生城市低代码开发平台；并参与了多了个区县级的数字孪生项目、城市级别的自动驾驶监控平台。
+熟悉的前端框架有React和Vue，并在公司项目中使用了React全家桶开发多个项目；曾经开发过会员管理系统、导航网站(使用了Vue以及相关的开发套件)。在学习和使用这两个框架时，做过一些比较，通过比较来进一步了解和学习这两个框架。
+本人在GitHub上开发维护过开源项目。
 业余时间开发了一款医院挂号APP，使用了跨端技术flutter， 后端技术栈node、graphQL、MongoDB;婴儿日志等微信小程序，使用了 kbone-ui 基于 kbone，利用 Vue 语法，一套跨平台开发的 UI 库。
-本人在GitHub上开发维护过开源项目；
-在大学期间主要学习的是C#编程语言、.net框架、在实习和工作之初从事ASP.NET开发工作，有过后端开发经验和数据库使用经验，从事后端开发期间除了编写C#代码之外同时也编写JavaScript的前端业务逻辑代码和前端模板的编写
+在大学期间主要学习的是C#编程语言、.net框架、在实习和工作之初从事ASP.NET开发工作，有过后端开发经验和数据库使用经验，从事后端开发期间除了编写C#代码之外同时也编写JavaScript的前端业务逻辑代码和前端模板的编写。
 
 ---
 
@@ -33,8 +33,13 @@
 ## 北京相数科技有限公司 （ 2020年10月 ~ 至今 ）
 
 ### SpaceOjoMap
-web 3D 渲染引擎
+web 3D 地图库
 基于MapBoxGl、DeckGl、three.js封装的web 3D 地图库，我在此项目负责了项目工程的搭建，通用图层和效果的封装
+
+### SpaceOjoGL
+web 3D 渲染引擎
+基于three.js封装的web 3D 渲染库，实现了天空盒子、散点、立体面、图标、标牌、3D模型、路径线、弧线、河流、3Dtiles等图层
+我在此项目负责了项目工程的搭建，通用图层和效果的封装
 
 ### DoCity
 基于城市信息模型（CIM）
@@ -105,14 +110,17 @@ P2P网站负责的模块有，登录注册、个人中心、众筹模块、和�
 # 开源项目和作品
 
 ## GitHub项目
+ - [threejs-globe](https://github.com/xiaxiangfeng/threejs-globe):web 3D 地球
+ - [threejs-building](https://github.com/xiaxiangfeng/threejs-building):web 3D 建筑群
+ - [CircleProgress](https://github.com/xiaxiangfeng/CircleProgress):css 版本的圆环进度条
  - [react-carousel3d](https://github.com/xiaxiangfeng/react-carousel3d):react 版本3D效果的走马灯
  - [react-3d-model](https://github.com/xiaxiangfeng/react-3d-model):react 版本3D模型预览
- - [vue-m](https://github.com/xiaxiangfeng/vue-m): 一个用Vue+Vuex+rem+ts开发的手机网站架子
- - [id-card-validator](https://github.com/xiaxiangfeng/id-card-validator)：身份证严格验证和获取基本信息：15位和18位内地身份证包括地区、生日、校验码；获取性别，年龄，出生日期，城市名称
  - [react-flip-clock](https://github.com/xiaxiangfeng/react-flip-clock)：react 翻页时钟计时器插件
- - [k-line](https://github.com/xiaxiangfeng/k-line)：股票、虚拟币交易k线图
+ - [id-card-validator](https://github.com/xiaxiangfeng/id-card-validator)：身份证严格验证和获取基本信息：15位和18位内地身份证包括地区、生日、校验码；获取性别，年龄，出生日期，城市名称
  - [count-down](https://github.com/xiaxiangfeng/count-down)：一个js写的倒计时插件
  - [e2number-string](https://github.com/xiaxiangfeng/e2number-string): 科学计数法转数字字符串
+ - [vue-m](https://github.com/xiaxiangfeng/vue-m): 一个用Vue+Vuex+rem+ts开发的手机网站架子
+ - [k-line](https://github.com/xiaxiangfeng/k-line)：股票、虚拟币交易k线图
 
 ## 技术文章
 
