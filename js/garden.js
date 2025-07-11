@@ -240,3 +240,17 @@ Garden.randomrgba = function (rmin, rmax, gmin, gmax, bmin, bmax, a) {
     return Garden.rgba(r, g, b, a);
   }
 };
+Garden.setScale = function(scale) {
+  Garden.options.bloomRadius = {
+    min: 8 * scale,
+    max: 10 * scale
+  };
+  Garden.options.petalStretch = {
+    min: 0.1 * scale,
+    max: 3 * scale
+  };
+  Garden.options.growFactor = {
+    min: 0.1 * scale,
+    max: 1 * scale
+  };
+};

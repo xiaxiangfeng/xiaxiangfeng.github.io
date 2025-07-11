@@ -2,28 +2,31 @@
 body {
   margin: 0px;
   padding: 0px;
-}
-html,
-body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 body {
   margin: 0;
   padding: 0;
   background: #ffe;
   font-size: 12px;
-  overflow: auto;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 #garden {
-  max-width: 670px;
-  max-height: 625px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-width: none;
+  max-height: none;
+  z-index: 1;
 }
 .elapseClock {
   text-align: right;
@@ -33,33 +36,81 @@ body {
 }
 .words {
   font-family: "sans-serif";
-  font-size: 20px;
+  font-size: 22px;
   color: #666;
-  max-width: 250px;
-  width: 60%;
+  width: 90vw;
+  max-width: 340px;
+  min-width: 180px;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  position: absolute;
+  z-index: 2;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.0);
+  line-height: 1.5;
+  padding: 0 8px;
+  box-sizing: border-box;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1.2s cubic-bezier(.4,0,.2,1);
+}
+.words.words-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+@media (max-width: 600px) {
+  .words {
+    position: fixed;
+    top: auto;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 98vw;
+    max-width: 98vw;
+    min-width: 0;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 2vw 12px 2vw;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  .messages {
+    font-size: 1em;
+    padding-top: 0;
+  }
+  .loveu {
+    font-size: 0.95em;
+    padding-right: 0;
+    text-align: center;
+  }
+  .loveu .signature {
+    font-size: 1em;
+    text-align: center;
+  }
 }
 .messages {
-  padding-top: 20px;
+  padding-top: 10px;
   display: none;
+  font-size: 1em;
+  line-height: 1.5;
 }
 .elapseClock .digit {
   font-family: "digit";
   font-size: 16px;
 }
 .loveu {
-  font-size: 16px;
+  font-size: 0.95em;
   text-align: right;
   display: none;
-  padding-right: 30px;
+  padding-right: 10px;
+  line-height: 1.5;
 }
 .loveu .signature {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 1.1em;
   font-style: italic;
+  text-align: right;
 }
 .code {
   color: #333;
@@ -67,7 +118,10 @@ body {
     "sans-serif";
   font-size: 18px;
   max-width: 670px;
-  margin: auto;
+  margin: 20px auto 0 auto;
+  z-index: 3;
+  position: relative;
+  background: none;
 }
 .code .string {
   color: #2a36ff;
