@@ -17,7 +17,7 @@
     <div id="content">
       <div id="code">
         <span class="comments">/**</span><br />
-        <span class="space" /><span class="comments">*2020—02-22,</span><br />
+        <span class="space" /><span class="comments">*2020-02-22 06:21,</span><br />
         <span class="space" /><span id='nowDate' class="comments"></span><br />
         <span class="space" /><span class="comments">*/</span><br />
       </div>
@@ -38,14 +38,20 @@
 
   <script type="text/javascript">
     var together = new Date();
+    function padZero(num) {
+      return num < 10 ? '0' + num : num;
+    }
     var year = together.getFullYear();
-    var month = together.getMonth() + 1;
-    var day = together.getDate();
-    document.getElementById('nowDate').innerHTML = '*' + year + '-' + month + '-' + day + '.'
+    var month = padZero(together.getMonth() + 1);
+    var day = padZero(together.getDate());
+    var h = padZero(together.getHours());
+    var m = padZero(together.getMinutes());
+    
+    document.getElementById('nowDate').innerHTML = '*' + year + '-' + month + '-' + day + ' ' + h + ':' + m + '.'
 
     together.setFullYear(2020, 1, 22);
-    together.setHours(0);
-    together.setMinutes(0);
+    together.setHours(6);
+    together.setMinutes(21);
     together.setSeconds(0);
     together.setMilliseconds(0);
 
